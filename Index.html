@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>OCR Exam App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+<h1>🧠 OCR Paper 2 Exam App</h1>
+
+<div class="card">
+<button onclick="startExam()">Start Exam</button>
+<button onclick="reset()">Reset</button>
+</div>
+
+<div id="timer" class="card">Time: 00:00</div>
+
+<div id="exam" class="card" style="display:none;">
+<h2 id="title"></h2>
+<pre id="question"></pre>
+
+<textarea id="answer"></textarea>
+
+<button onclick="submit()">Submit</button>
+<div id="feedback"></div>
+</div>
+
+<div class="card">
+<h3>📊 Stats</h3>
+<pre id="stats"></pre>
+</div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
